@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Countdown Timer</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="countdown">
+            <div>
+                <span id="days">00</span>
+                <div class="countdown-text">Days</div>
+            </div>
+            <div>
+                <span id="hours">00</span>
+                <div class="countdown-text">Hours</div>
+            </div>
+            <div>
+                <span id="minutes">00</span>
+                <div class="countdown-text">Minutes</div>
+            </div>
+            <div>
+                <span id="seconds">00</span>
+                <div class="countdown-text">Seconds</div>
+            </div>
+        </div>
+        <div class="countdown-form">
+            <label for="countdown-date">Enter a date:</label>
+            <input type="datetime-local" id="countdown-date" required>
+            <button class="start-button" onclick="startCountdown()">Start</button>
+            <button class="stop-button" onclick="stopCountdown()">Stop</button>
+            <button class="reset-button" onclick="resetCountdown()">Reset</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
